@@ -1,0 +1,63 @@
+let sales: number = 1231234
+let arr: number[] = [1, 3, 54]
+let course: string = "Typescript"
+let is_published: boolean = true
+
+// tuples - fixed length of array, that each item has its own type - best practive using 2 types of item, and two item, it is useful for like key value pairs
+
+let user: [number, string] = [1, "aaa"]
+
+
+// ENUM ?
+
+// Functons
+
+// void means - nothings returns 
+
+// best practice - always write to returninh of the function in declaring, and default values
+
+function inc(income: number): number {
+  return 1
+}
+
+// or void if nothing returns 
+
+// function a(income: number): void {
+// }
+
+// OBJECTS 
+
+let empleyee: {
+  id: number,
+  name: string
+} = {
+  id:1,
+  name:"aaa",
+}
+
+--------------------Advanced Types
+
+type - type of object that what kind of things object will save
+
+type Employee = {
+  readonly id: number,
+  name: string,
+  retire: (date: Date) => void
+}
+
+unino type - one more tyoe like - string | number 
+
+narrowing orqali emmetni yaxshilasak boladi, yani js spesific type boyicha chiqaradi
+
+Intersection Types = bir vaqtni ozida 2 si ham boladi, yani unionga oxshash, lekin 2 si ham bir vaqtno ozida boladi. kopincyha objectlarda combain qilib ishlatish uchun ishlatiladi
+
+Intersection Types
+
+Type Assertions - type qo'shish
+
+
+protected memberlar inherit boladi lekin privatelar bolmaydi
+
+protected memberlarni uncha ishlatish tavsiya qilinmaydi
+
+DEcarator
